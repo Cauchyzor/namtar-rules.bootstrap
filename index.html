@@ -9,40 +9,56 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 </head>
 
-<body>
-  <aside>
-    <nav class="menu">
-      <ul>
+<body class="d-flex">
+  <aside class="d-flex">
+    <nav class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px">
+      <ul class="list-unstyled ps-0">
         <li>
-          Pour les joueurs
-          <ul>
-            <li>
-              <a data="creation-personnage" href="#">Création de personnage</a>
-            </li>
-            <li>
-              <a data="intepreter-les-des" href="#">Interpréter les dés</a>
-            </li>
-            <li><a data="competences" href="#">Tests de Compétences</a></li>
-            <li><a data="aventure" href="#">Partir à l'aventure</a></li>
-            <li><a data="combattre" href="#">Combattre</a></li>
-            <li><a data="equipement" href="#">Equipement et economie</a></li>
-            <li><a data="sante" href="#">Santé et Guerison</a></li>
-            <li><a data="vaisseau" href="#">Vaisseau et véhicules</a></li>
-          </ul>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+            data-bs-toggle="collapse" data-bs-target="#joueur-collapse" aria-expanded="false">Pour les
+            joueurs</button>
+          <div id="joueur-collapse" class="collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li>
+                <a class="d-inline-flex text-decoration-none text-white" data="creation-personnage" href="#">Création de
+                  personnage</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white" data="intepreter-les-des" href="#">Interpréter les dés</a>
+              </li>
+              <li><a class="text-decoration-none text-white" data="competences" href="#">Tests de
+                  Compétences</a></li>
+              <li><a class="text-decoration-none text-white" data="aventure" href="#">Partir à
+                  l'aventure</a></li>
+              <li><a class="text-decoration-none text-white" data="combattre" href="#">Combattre</a></li>
+              <li><a class="text-decoration-none text-white" data="equipement" href="#">Equipement
+                  et economie</a></li>
+              <li><a class="text-decoration-none text-white" data="sante" href="#">Santé
+                  et Guerison</a></li>
+              <li><a class="text-decoration-none text-white" data="vaisseau" href="#">Vaisseau et
+                  véhicules</a></li>
+            </ul>
+          </div>
         </li>
         <li>
-          Capacités
-          <ul>
-            <li><a data="augmentations" href="#">Augmentations</a></li>
-            <li><a data="evocations" href="#">Évocations</a></li>
-            <li><a data="alterations" href="#">Alterations</a></li>
-            <li><a data="mantras" href="#">Mantra</a></li>
-          </ul>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white"
+            data-bs-toggle="collapse" data-bs-target="#capacite-collapse" aria-expanded="false">Pour les
+            Capacités</button>
+          <div id="capacite-collapse" class="collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a class="text-decoration-none text-white" data="augmentations" href="#">Augmentations</a>
+              </li>
+              <li><a class="text-decoration-none text-white" data="evocations" href="#">Évocations</a></li>
+              <li><a class="text-decoration-none text-white" data="alterations" href="#">Alterations</a></li>
+              <li><a class="text-decoration-none text-white" data="mantras" href="#">Mantra</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
   </aside>
-  <main></main>
+  <main class="container"></main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
