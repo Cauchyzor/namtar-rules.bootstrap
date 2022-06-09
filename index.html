@@ -23,66 +23,69 @@
   </nav>
 </header>
 
-<div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" id="nam-sidebar">
-  <div class="border-bottom bg-white" id="brand-section">
-    <a class="btn btn-link text-decoration-none">
-      <span class="fs-5" id="brand">NAMTAR</span>
-    </a>
+<body>
+  <div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" id="nam-sidebar">
+    <div class="border-bottom bg-white" id="brand-section">
+      <a class="btn btn-link text-decoration-none">
+        <span class="fs-5" id="brand">NAMTAR</span>
+      </a>
+    </div>
+    <div class="flex-shrink-0" role="navigation">
+      <ul class="list-unstyled ps-0">
+        <li>
+          <button class="btn btn-toggle align-items-center rounded border-0">Introduction</button>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded border-0" data-bs-toggle="collapse"
+            data-bs-target="#options-joueur" aria-expanded="false" aria-controls="options-joueur">Pour les
+            joueurs</button>
+          <div id="options-joueur" class="list-group collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="creation-personnage">Création de personnage</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="intepreter-les-des">Interpréter les dés</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="competences">Tests de
+                  Compétences</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="combattre">Combattre</a>
+              </li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="equipement">Equipement et
+                  economie</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="sante">Santé
+                  et
+                  Guerison</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="vaisseau">Vaisseau et
+                  véhicules</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+            data-bs-target="#options-capacites" aria-expanded="false"
+            aria-controls="options-capacites">Capacités</button>
+          <div id="options-capacites" class="list-group  collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="augmentations">Augmentations</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="evocations">Évocations</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="alterations">Alterations</a></li>
+              <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
+                  data="mantras">Mantra</a></li>
+            </ul>
+          </div>
+      </ul>
+    </div>
   </div>
-  <div class="flex-shrink-0" role="navigation">
-    <ul class="list-unstyled ps-0">
-      <li>
-        <button class="btn btn-toggle align-items-center rounded border-0">Introduction</button>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded border-0" data-bs-toggle="collapse"
-          data-bs-target="#options-joueur" aria-expanded="false" aria-controls="options-joueur">Pour les
-          joueurs</button>
-        <div id="options-joueur" class="list-group collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="creation-personnage">Création de personnage</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="intepreter-les-des">Interpréter les dés</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="competences">Tests de
-                Compétences</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="combattre">Combattre</a>
-            </li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="equipement">Equipement et
-                economie</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#" data="sante">Santé
-                et
-                Guerison</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="vaisseau">Vaisseau et
-                véhicules</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="mb-1">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
-          data-bs-target="#options-capacites" aria-expanded="false" aria-controls="options-capacites">Capacités</button>
-        <div id="options-capacites" class="list-group  collapse">
-          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="augmentations">Augmentations</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="evocations">Évocations</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="alterations">Alterations</a></li>
-            <li><a class="list-group-item list-group-item-action list-group-item-dark ps-5" href="#"
-                data="mantras">Mantra</a></li>
-          </ul>
-        </div>
-    </ul>
-  </div>
-</div>
 
-<main class="container" id="nam-content">
-</main>
+  <main class="container" id="nam-content">
+  </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
